@@ -8,7 +8,7 @@
 ## About 🔍 <a name='1'></a>
 
 [Frontend design](./design/frontend/) <br/>
-[Backend design](./design/backend/)
+  [Backend design](./design/backend/)
 
 ## Development roadmap :golf: <a name='2'></a>
 
@@ -16,10 +16,7 @@
  - [x] choose tech stack { Next.js Typescript }
  - [x] design page Layouts in figma
  - [x] design backend scheme's
-### Prototipe
- - [ ] Posting CRUD
- - [ ] Sighting CRUD
- - [ ] Authorization
+
 ### Product Development
  - [ ] Create Landing page
  - [ ] Create Sighting page
