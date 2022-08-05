@@ -1,0 +1,10 @@
+@use '../common/colors.scss';
+
+.button {
+  background-color: colors.$bright-color;
+  border: solid 2px white;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+}
