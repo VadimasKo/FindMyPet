@@ -1,0 +1,64 @@
+@use '../common/colors.scss';
+
+@mixin inputDefaults {
+  background-color: colors.$medium-color;
+  border: none;
+  color: white;
+  outline: none;
+  font-weight: 500;
+  font-size: large;
+  padding: 0.5rem
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.input {
+  @include inputDefaults();
+}
+
+.textArea {
+  @include inputDefaults();
+  height: 10rem;
+  resize: none;
+  font-family: inherit;
+}
+
+
+.border {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.uploadContainer {
+  background-color: colors.$medium-color;
+  width: 100;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.upload {
+  width: 100%;
+  height: 18rem;
+  opacity: 0;
+}
+
+.uploadText {
+  font-weight: bold;
+  font-size: larger;
+  // justify-self: center;
+  align-self: center;
+  position: absolute;
+}

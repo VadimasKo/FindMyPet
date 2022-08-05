@@ -1,0 +1,26 @@
+@use "../common/colors.scss";
+
+.toogle {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.option {
+  background-color: colors.$medium-color;
+  font-weight: 400;
+  font-size: x-large;
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} 
+
+
+.selected {
+  @extend .option;
+  background-color: colors.$bright-color;
+  font-weight: bold;
+  border: white;
+}
