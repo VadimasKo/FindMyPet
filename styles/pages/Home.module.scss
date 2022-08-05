@@ -1,0 +1,7 @@
+@use '../common/colors.scss';
+
+.container {
+  background-color: colors.$dark-color;
+  width: 100vw;
+  height: 100vh;
+}
