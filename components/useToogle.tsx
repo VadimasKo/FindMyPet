@@ -5,6 +5,7 @@ interface Props {
   options: [string, string]
   style?: React.CSSProperties
 }
+
 type ToogleType = ({ options }: Props) => JSX.Element
 
 
@@ -17,7 +18,7 @@ const useToogle = () => {
     }
   }
 
-  const Toogle: ToogleType = ({ options, style}) => {
+  const Toogle: ToogleType = ({ options, style }) => {
     return (
       <div className={styles.toogle} style={style}>
         <div

@@ -1,0 +1,17 @@
+@use '../common/colors.scss' as *;
+
+@mixin grid-layout {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,9 +1,13 @@
-import { Input, TextArea, ImageUpload } from "../../components/Inputs"
-import Button from "../../components/Button"
-import Header from "../../components/Header"
-import useToogle from "../../components/useToogle"
-import styles from '../../styles/pages/CreatePoster.module.scss'
 import { FormEvent } from "react"
+import {
+  Input,
+  TextArea,
+  ImageUpload,
+}                from "../../components/Inputs"
+import Button    from "../../components/Button"
+import Header    from "../../components/Header"
+import useToogle from "../../components/useToogle"
+import styles    from '../../styles/pages/CreatePoster.module.scss'
 
 
 const CreatePoster = () => {
@@ -14,10 +18,13 @@ const CreatePoster = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className='page'>
       <Header
         title='Create Poster'
-        description="Describe your pet so others could help you find your loved one"
+        description="
+          Describe your pet so others
+          could help you find your loved one
+        "
       />
       <form onSubmit={handleSubmit} className={styles.content}>
         <h2>New Poster</h2>

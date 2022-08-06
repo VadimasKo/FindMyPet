@@ -5,17 +5,17 @@ interface Props {
   description?: string
 }
 
+
 const Header = ({ title, description }: Props) => {
   return (
-    <div className={styles.container}>
-      <nav className={styles.nav}>
-        <span> {'<'}Icon{'/>'}</span>
-        <h1 className={styles.title}>{title}</h1>
-        <div>menu</div>
-      </nav>
-      <h2>{description}</h2>
-    </div>
-
+    <nav className={styles.header}>
+      <div className={styles.title}>
+        <span>{'<'}Icon{'/>'}</span>
+        <h1>{title}</h1>
+      </div>
+      <span className={styles.menu}>menu</span>
+      <h2 className={styles.description}>{description}</h2>
+    </nav>
   )
 }
 

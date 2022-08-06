@@ -1,43 +1,37 @@
-.container {
+@use '../common/mixins.scss' as *;
+
+.header {
+  @include grid-layout;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+
+  padding-top: 1rem;
   background-color: inherit;
-  padding: 1rem 0;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr 1fr;
-  row-gap: 0;
+}
 
-  h2 {
-    grid-column: 2/4;
-    max-width: 30rem;
-    padding: 0;
-    margin: 0;
+.title {
+  grid-column: 2/6;
+  font-size: xx-large;
+
+  display: flex;
+  align-items: center;
+
+  h1 {
+    text-decoration: underline;
   }
 
-  nav {
-    grid-column: 1/9;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-
-    span {
-      // placeholder for logo
-      grid-column: 1/2;
-      display: flex;
-      justify-content: flex-end;
-      font-size: xx-large;
-      padding-right: 2rem;
-    }
-
-    h1 {
-      grid-column: 2/5;
-      font-size: 3rem;
-      text-decoration: underline;
-    }
-
-    div {
-      grid-column: 8/9;
-      font-weight: bold;
-      font-size: xx-large;
-    }
+  span {
+    padding-right: 2rem;
   }
+}
+
+.menu {
+  grid-column: 11/12;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.description {
+  grid-column: 2/6;
+  max-width: 30rem;
 }

@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   const router = useRouter()
 
   return (
-    <div className={styles.container}>
+    <div className='page'>
       <Header title='Find My Pet'/>
       <h1>Let's get those pets back home</h1>
       <Button
