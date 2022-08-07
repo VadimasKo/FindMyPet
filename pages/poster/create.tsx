@@ -27,7 +27,6 @@ const CreatePoster = () => {
         "
       />
       <form onSubmit={handleSubmit} className={styles.content}>
-        <h2>New Poster</h2>
         <div className={styles.toogle}>
           <Toogle options={['Cat', 'Dog']}/>
         </div>

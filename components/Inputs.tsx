@@ -3,6 +3,7 @@ import styles from '../styles/components/Inputs.module.scss'
 interface Props {
   label: string
   name:  string
+  style?: React.CSSProperties
   isFocused?: boolean
 }
 
@@ -38,9 +39,9 @@ export const TextArea = ({ label, name }: Props) => {
   )
 }
 
-export const ImageUpload = ({ label, name }: Props) => {
+export const ImageUpload = ({ name, style }: Props) => {
   return (
-    <div className={styles.border}>
+    <div className={styles.border} style={style}>
       <div className={styles.uploadContainer}>
         <p className={styles.uploadText}>Upload Image</p>
         <input

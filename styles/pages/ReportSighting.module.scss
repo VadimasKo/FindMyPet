@@ -1,0 +1,33 @@
+@use '../common/mixins.scss' as *;
+@use '../common//colors.scss'as *;
+
+.content {
+  @include grid-layout;
+  grid-template-rows: 0.2fr 0.5fr 60px;
+  padding-top: 5%;
+}
+
+.textCol {
+  @include flex-column;
+  align-items: flex-end;
+  grid-column: 2/5;
+}
+
+.imgCol {
+  grid-column: 5/7;
+}
+
+.submitRow {
+  grid-column: 4/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.missingPets {
+  grid-column: 9/11;
+  grid-row: 1/3;
+  padding: 10px;
+  border: solid white 2px;
+  background-color: $medium-color;
+}
